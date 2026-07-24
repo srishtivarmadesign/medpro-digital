@@ -1,0 +1,54 @@
+/*NAV BAR*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  color: #0d1b3e;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.logo span {
+  color: #00c2b3;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  padding: 20px 0;
+}
+h1 {
+  font-size: 28px;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+h1 span {
+  color: #00c2b3;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 24px;
+  background-color: #00c2b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  cursor: pointer; /* Shows a hand cursor on hover */
+}
