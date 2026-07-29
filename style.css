@@ -293,3 +293,134 @@ PAIN POINTS SECTION-3
   font-weight: 400;
   line-height: 20px;
 }
+
+/* WHAT CLINICS ACTUALLY NEED SECTION-5 */
+
+.clinics-need {
+  padding: 100px 0;
+  background-color: #f7f9f9;
+}
+.clinics-need-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.clinics-need-image,
+.clinics-need-text {
+  flex: 1;
+  max-width: 500px;
+}
+.clinics-need-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0 0 0 4px rgba(0, 194, 179, 0.25);
+}
+.section-description {
+  color: #6b7280;
+  max-width: 560px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.clinics-need-text h2 {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+.clinics-need-text .section-eyebrow {
+  color: #00c2b3;
+  text-align: left;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.clinics-need-text .section-description {
+  max-width: 560px;
+}
+
+/* HOW IT WORKS SECTION-6 */
+
+.system {
+  padding: 100px 0;
+  background: #fff;
+}
+.system-card {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 20px;
+  background: #f7f9f9;
+  box-shadow: 0 0 0 2px rgba(0, 194, 179, 0.24);
+}
+.system-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.system-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number-circle {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #00c2b3;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+}
+.number-line {
+  width: 2px;
+  height: 96px;
+  background: rgba(0, 194, 179, 0.19);
+}
+.system-content h3 {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+.system-content p {
+  color: var(--Text-Muted, #6b7280);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.system h2 {
+  color: #0d1b3e;
+  margin-bottom: 48px;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
