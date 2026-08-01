@@ -8,16 +8,26 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   color: #0d1b3e;
+  line-height: 1.5;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -225,7 +235,7 @@ PAIN POINTS SECTION-3
 /* CREDIBILITY SECTION-4 */
 
 .credibility {
-  padding: 100px;
+  padding: 100px 0;
 }
 .credibility-content {
   display: flex;
@@ -428,7 +438,7 @@ PAIN POINTS SECTION-3
 /* what's included - 7 */
 
 .features {
-  padding: 100px;
+  padding: 100px 0;
   background: #f7f9f9;
   display: flex;
   align-items: flex-start;
@@ -625,4 +635,179 @@ PAIN POINTS SECTION-3
   flex-shrink: 0; /*flex-shrink: 0 kyun?
 Because .fit-item Flexbox hai. Long text hone par hum nahi chahte browser icon ko squeeze kare.
 So icon always 20 × 20px rahega.*/
+}
+
+/*section-10*/
+
+.faq {
+  padding: 100px 0;
+}
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
+}
+.faq-header h2 {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 12px;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.faq-item {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  text-align: left;
+}
+.faq-question > span:first-child {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.faq-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ecfdfb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+.faq-icon img {
+  width: 10px;
+  height: 14px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.faq-answer {
+  display: none;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active .faq-icon img {
+  transform: rotate(90deg);
+}
+/*section-11*/
+
+.final-cta {
+  background-color: #00c2b3;
+  padding: 100px 0;
+}
+.cta-content {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta-content h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  margin-bottom: 12px;
+}
+.cta-subheading {
+  font-family: "DM Sans";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  opacity: 0.85;
+}
+.cta-description {
+  color: #fff;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 48px;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+}
+a.btn {
+  color: #00c2b3;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.cta-note {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+  margin-top: 14px;
+}
+
+/* FOOTER SECTION-12 */
+
+.footer {
+  background-color: #0d1b3e;
+  padding: 20px 50px;
+}
+.footer .logo {
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.footer-content p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.5;
 }
