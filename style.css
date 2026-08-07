@@ -795,6 +795,7 @@ a.btn {
 }
 .footer .logo {
   color: #fff;
+  font-size: 16px;
 }
 .footer-content {
   display: flex;
