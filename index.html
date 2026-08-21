@@ -754,6 +754,113 @@
       </div>
     </section>
 
+    <!--QUALIFICATION FORM-->
+
+    <div class="qualification-modal">
+      <form class="qualification-form">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Owner or Manager Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="clinic-type">Clinic type</label>
+
+          <select id="clinic-type" name="clinic-type" required>
+            <option value="" disabled selected>Select your clinic type</option>
+
+            <option value="aesthetic">Aesthetic Clinic</option>
+            <option value="laser">Laser Clinic</option>
+            <option value="wellness">Wellness Clinic</option>
+            <option value="weight-loss">Weight loss Clinic</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Do you have a dedicated telecaller?</p>
+
+          <div class="form-options">
+            <label class="option">
+              <input
+                type="radio"
+                name="telecaller"
+                value="yes-full-time"
+                required
+              />
+              <span>Yes, full-time</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="telecaller" value="not-yet" />
+              <span>Not yet</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="telecaller" value="planning-to-hire" />
+              <span>Planning to hire</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Monthly Meta ads budget</p>
+
+          <div class="form-options">
+            <label class="option">
+              <input
+                type="radio"
+                name="ads-budget"
+                value="under-20k"
+                required
+              />
+              <span>Under ₹20K</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="ads-budget" value="20k-50k" />
+              <span>₹20K - ₹50K</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="ads-budget" value="50k-plus" />
+              <span>₹50K+</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="ads-budget" value="not-running-ads" />
+              <span>Not running ads yet</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp number</label>
+
+          <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="Enter your WhatsApp number"
+            required
+          />
+        </div>
+
+        <button type="submit" class="qualification-submit">
+          Check if your clinic qualifies →
+        </button>
+
+        <button type="button" class="modal-close" aria-label="Close form">
+          &times;
+        </button>
+      </form>
+    </div>
+
     <!-- FOOTER -12 -->
 
     <footer class="footer">
@@ -769,5 +876,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
