@@ -339,6 +339,29 @@ PAIN POINTS SECTION-3
   background: lightgray 50% / cover no-repeat;
   box-shadow: 0 0 0 4px rgba(0, 194, 179, 0.25);
 }
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  padding: 24px;
+  background: rgba(13, 27, 62, 0.85);
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+.lightbox-image {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 90vh;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.lightbox.active {
+  display: flex;
+}
 .section-description {
   color: #6b7280;
   max-width: 560px;
@@ -778,16 +801,17 @@ So icon always 20 × 20px rahega.*/
   border-radius: 8px;
   background: #fff;
 }
-a.btn {
+.btn.btn-primary {
   color: #00c2b3;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  border: none;
   transition: background-color 0.3s ease;
 }
-a.btn:hover {
+.btn.btn-primary:hover {
   background-color: #0d1b3e;
   color: #fff;
 }

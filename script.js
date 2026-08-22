@@ -10,6 +10,16 @@ console.log("Javascript file is linked successfully!");
 const qualificationModal = document.querySelector(".qualification-modal");
 console.log(qualificationModal);
 
+// Reusable function to OPEN the qualification modal
+function openModal() {
+  qualificationModal.classList.add("active");
+}
+
+// Reusable function to CLOSE the qualification modal
+function closeModal() {
+  qualificationModal.classList.remove("active");
+}
+
 const navButton = document.querySelector(".btn-nav");
 console.log(navButton);
 navButton.addEventListener("click", function () {
@@ -17,7 +27,7 @@ navButton.addEventListener("click", function () {
 
   // Add the "active" class to the modal
   // This changes the modal from hidden to visible
-  qualificationModal.classList.add("active");
+  openModal();
 });
 
 // Find the close button inside the modal
@@ -27,5 +37,53 @@ console.log(closeButton);
 closeButton.addEventListener("click", function () {
   console.log("Close button clicked!");
 
-  qualificationModal.classList.remove("active");
+  closeModal();
+});
+
+const heroButton = document.querySelector(".hero .btn-primary");
+console.log(heroButton);
+heroButton.addEventListener("click", function () {
+  console.log("Hero button clicked!");
+
+  openModal();
+});
+// NOTE:
+// navButton and heroButton are different elements.
+// They are only the triggers.
+//
+// qualificationModal is a separate DOM element.
+// Both click handlers use the same qualificationModal variable,
+// so both buttons affect the same modal.
+// A reference is a way for a JavaScript variable to access an existing object/DOM element.
+const finalCtabutton = document.querySelector(".final-cta .btn.btn-primary");
+console.log(finalCtabutton);
+finalCtabutton.addEventListener("click", function () {
+  console.log("Final CTA button clicked!");
+
+  openModal();
+});
+
+const clinicsImage = document.querySelector(".clinics-need-image img");
+console.log(clinicsImage);
+console.log(clinicsImage.src);
+
+clinicsImage.addEventListener("click", function () {
+  console.log("Clinics image clicked!");
+
+  lightboxImage.src = clinicsImage.src;
+  lightbox.classList.add("active");
+});
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = document.querySelector(".lightbox-image");
+console.log(lightbox);
+console.log(lightboxImage);
+
+// Find the lightbox close button
+const lightboxClose = document.querySelector(".lightbox-close");
+console.log(lightboxClose);
+
+lightboxClose.addEventListener("click", function () {
+  console.log("Lightbox close button clicked!");
+
+  lightbox.classList.remove("active");
 });
