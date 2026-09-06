@@ -161,8 +161,6 @@ button.btn-nav:hover {
 .hero-trust {
   color: #6b7280;
   text-align: center;
-
-  /* Body/Small */
   font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
@@ -1021,4 +1019,81 @@ So icon always 20 × 20px rahega.*/
 
 .form-success.show {
   display: block;
+}
+
+/* =========================
+   MOBILE (390px - 768px)
+========================= */
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+  button.btn-nav {
+    padding: 10px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+  .section-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero .section-eyebrow {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-note {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .hero .btn-primary {
+    font-size: 14px;
+    width: 100%;
+    max-width: 280px;
+  }
+  .hero-trust {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  /*section 2*/
+  .pain-points h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .pain-item {
+    padding: 18px;
+  }
+  .pain-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pain-points .section-note {
+    max-width: 340px;
+    font-size: 12px;
+  }
+  .pain-points {
+    padding: 60px 0;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+  .pain-list {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
 }
