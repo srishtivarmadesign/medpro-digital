@@ -87,7 +87,7 @@ button.btn-nav:hover {
   max-width: 860px;
   margin: 0 auto;
 }
-.hero-eyebrow {
+.hero .section-eyebrow {
   color: #00c2b3;
   text-align: center;
   font-family: "DM Sans";
