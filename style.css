@@ -257,7 +257,6 @@ PAIN POINTS SECTION-3
 }
 .credibility-text h2 {
   color: #0d1b3e;
-
   font-family: "DM Sans";
   font-size: 36px;
   font-style: normal;
@@ -1035,7 +1034,7 @@ So icon always 20 × 20px rahega.*/
     border-radius: 6px;
   }
   .section-eyebrow {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 1.5px;
   }
 
@@ -1095,5 +1094,40 @@ So icon always 20 × 20px rahega.*/
   .pain-list {
     margin-top: 32px;
     margin-bottom: 16px;
+  }
+
+  /*Credibility section 4*/
+  .credibility-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .credibility-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .credibility-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .quote-card {
+    padding: 56px 28px;
+    border-radius: 4px;
+  }
+  .quote-card p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .quote-icon {
+    width: 24px;
+    height: auto;
+  }
+  .quote-author {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .credibility {
+    padding: 60px 0;
   }
 }
