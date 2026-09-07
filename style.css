@@ -639,11 +639,7 @@ PAIN POINTS SECTION-3
   font-weight: 700;
   line-height: 28px;
 }
-.fit-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
 .fit-item {
   display: flex;
   align-items: flex-start;
@@ -653,7 +649,6 @@ PAIN POINTS SECTION-3
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -706,16 +701,13 @@ So icon always 20 × 20px rahega.*/
 .faq-question {
   width: 100%;
   padding: 20px 30px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-
   background: none;
   border: none;
   cursor: pointer;
-
   text-align: left;
 }
 .faq-question > span:first-child {
@@ -754,6 +746,7 @@ So icon always 20 × 20px rahega.*/
 .faq-item.active .faq-icon img {
   transform: rotate(90deg);
 }
+
 /*section- FINAL CTA 11*/
 
 .final-cta {
@@ -861,24 +854,20 @@ So icon always 20 × 20px rahega.*/
 /* QUALIFICATION FORM*/
 .qualification-modal {
   display: none;
-
   position: fixed;
   inset: 0;
   z-index: 1000;
-
   padding: 24px;
-
   background: rgba(13, 27, 62, 0.55);
-
   align-items: center;
   justify-content: center;
-
   overflow-y: auto;
 }
 
 .qualification-modal.active {
   display: flex;
 }
+
 .qualification-form {
   width: 100%;
   max-width: 560px;
@@ -1129,5 +1118,263 @@ So icon always 20 × 20px rahega.*/
   }
   .credibility {
     padding: 60px 0;
+  }
+
+  /* WHAT CLINICS ACTUALLY NEED SECTION-5 */
+  .clinics-need {
+    padding: 60px 0;
+  }
+  .clinics-need-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .clinics-need-text {
+    order: 1;
+  }
+  .clinics-need-image {
+    order: 2;
+  }
+  .clinics-need-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .section-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .lightbox-image {
+    width: auto;
+    height: auto;
+    max-width: calc(100vw - 48px);
+    max-height: calc(100vh - 48px);
+    object-fit: contain;
+  }
+  .clinics-need-image img {
+    border-radius: 10px;
+  }
+  /* HOW IT WORKS SECTION-6 */
+  .system {
+    padding: 60px 0;
+  }
+  .system-card {
+    padding: 30px 20px;
+    gap: 16px;
+  }
+  .system h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+  .system-content h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .system-content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .system-item {
+    gap: 16px;
+  }
+  .system-number {
+    gap: 16px;
+  }
+  .number-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  /* what's included - 7 */
+  .features {
+    padding: 60px 0;
+  }
+  .features h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 20px;
+    gap: 16px;
+    border-radius: 8px;
+  }
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .feature-card h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .feature-card p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /*SECTION 8*/
+  .requirements {
+    padding: 60px 0;
+  }
+  .section-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+  .requirements-list {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+  }
+  .requirement-item {
+    padding: 16px;
+    gap: 18px;
+    align-items: start;
+  }
+  .requirement-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+  }
+  .requirement-content h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .requirement-content p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+  }
+  .requirements-note {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /*section-9*/
+  .clinic-fit {
+    padding: 60px 0;
+  }
+  .clinic-fit-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .fit-card {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .fit-card h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  .fit-item span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .fit-item img {
+    width: 16px;
+    height: 16px;
+  }
+  .fit-list {
+    gap: 12px;
+  }
+  /*section-10*/
+  .faq {
+    padding: 60px 0;
+  }
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .faq-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 8px;
+  }
+  .faq-list {
+    gap: 24px;
+  }
+  .faq-item {
+    border-radius: 8px;
+  }
+  .faq-question {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+  .faq-question > span:first-child {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .faq-icon img {
+    width: 8px;
+    height: 12px;
+  }
+  .faq-answer {
+    padding: 0 20px 16px;
+    font-size: 14px;
+  }
+  /*section- FINAL CTA 11*/
+  .final-cta {
+    padding: 60px 0;
+  }
+  .cta-content h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+  .cta-subheading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .cta-description {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  .btn.btn-primary {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .cta-note {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  /* FOOTER SECTION-12 */
+  .footer {
+    padding: 16px 10px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    justify-content: center;
+  }
+  .footer .logo {
+    font-size: 14px;
+  }
+  .footer-content p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /* QUALIFICATION FORM*/
+  .qualification-form {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+  .qualification-modal {
+    align-items: flex-start;
+    padding: 16px;
+  }
+  .qualification-submit {
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }
