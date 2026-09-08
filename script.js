@@ -125,10 +125,9 @@ faqQuestions.forEach(function (question) {
 
 // Select the qualification form
 const qualificationForm = document.querySelector(".qualification-form");
-
 console.log(qualificationForm);
 
-qualificationForm.addEventListener("submit", function (event) {
+qualificationForm.addEventListener("submit", async function (event) {
   event.preventDefault();
 
 
@@ -139,7 +138,6 @@ qualificationForm.addEventListener("submit", function (event) {
   const adsBudget = document.querySelector(
     'input[name="ads-budget"]:checked'
   );
-
 
   //objects
   const formData = {
@@ -157,21 +155,31 @@ qualificationForm.addEventListener("submit", function (event) {
   }
 
   console.log(formData);
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbwa5OXKwJPEgA8MkYmBj8tDphosjNGn2hQheUUPQ6VSqRCpo4VWfbSPT8QyP0CUZ9ar/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
-  successMessage.classList.add("show");
+    successMessage.classList.add("show");
+    qualificationForm.reset();
 
-  qualificationForm.reset();
-
-  // Show success message
-  successMessage.classList.add("show");
-
-  // Close modal after 2 seconds
-  closeModalTimeout = setTimeout(function () {
-    closeModal();
-    successMessage.classList.remove("show");
-  }, 5000);
+    closeModalTimeout = setTimeout(function () {
+      closeModal();
+      successMessage.classList.remove("show");
+    }, 5000);
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+    console.error(error);
+  }
 });
-
 
 // Select the name input field
 const nameInput = document.getElementById("name");
