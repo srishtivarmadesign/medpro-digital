@@ -155,7 +155,11 @@ qualificationForm.addEventListener("submit", async function (event) {
   }
 
   console.log(formData);
+
   try {
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
     await fetch(
       "https://script.google.com/macros/s/AKfycbwa5OXKwJPEgA8MkYmBj8tDphosjNGn2hQheUUPQ6VSqRCpo4VWfbSPT8QyP0CUZ9ar/exec",
       {
@@ -171,11 +175,16 @@ qualificationForm.addEventListener("submit", async function (event) {
     successMessage.classList.add("show");
     qualificationForm.reset();
 
+    submitButton.disabled = false;
+    submitButton.textContent = "Check if your clinic qualifies →";
+
     closeModalTimeout = setTimeout(function () {
       closeModal();
       successMessage.classList.remove("show");
     }, 5000);
   } catch (error) {
+    submitButton.disabled = false;
+    submitButton.textContent = "Check if your clinic qualifies →";
     alert("Something went wrong. Please try again.");
     console.error(error);
   }
@@ -189,3 +198,4 @@ const clinicTypeInput = document.getElementById("clinic-type");
 const whatsappInput = document.getElementById("whatsapp");
 
 const successMessage = document.querySelector(".form-success");
+const submitButton = document.querySelector(".qualification-submit");

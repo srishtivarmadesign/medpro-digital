@@ -44,12 +44,14 @@ button {
 header {
   background-color: #fff;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
 }
 .logo {
   font-size: 24px;
@@ -326,7 +328,14 @@ PAIN POINTS SECTION-3
 .clinics-need-image,
 .clinics-need-text {
   flex: 1;
+}
+
+.clinics-need-image {
   max-width: 500px;
+}
+
+.clinics-need-text {
+  max-width: 400px;
 }
 .clinics-need-image img {
   width: 100%;
@@ -610,13 +619,14 @@ PAIN POINTS SECTION-3
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  align-items: start;
+  align-items: stretch;
 }
 .fit-card {
   border: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
   padding: 28px;
   border-radius: 12px;
+  height: 100%;
 }
 .fit-card-positive {
   background-color: #ffffff;
