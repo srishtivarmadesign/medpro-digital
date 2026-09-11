@@ -331,11 +331,11 @@ PAIN POINTS SECTION-3
 }
 
 .clinics-need-image {
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .clinics-need-text {
-  max-width: 400px;
+  max-width: 500px;
 }
 .clinics-need-image img {
   width: 100%;
@@ -345,6 +345,55 @@ PAIN POINTS SECTION-3
   background: lightgray 50% / cover no-repeat;
   box-shadow: 0 0 0 4px rgba(0, 194, 179, 0.25);
 }
+/*KAL KARNA HAI*/
+.needs-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+.needs-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.needs-number {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f0fffe;
+  color: #00c2b3;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+.needs-content h3 {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.needs-content p {
+  color: #6b7280;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.needs-item + .needs-item {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
 .lightbox {
   display: none;
   position: fixed;
@@ -375,8 +424,41 @@ PAIN POINTS SECTION-3
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
   line-height: 28px;
 }
+
+.needs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.needs-content h3 {
+  color: #0d1b3e;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+.needs-content p {
+  color: #6b7280;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.needs-item h3 span {
+  color: #00c2b3;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 6px;
+}
+
 .clinics-need-text h2 {
   color: #0d1b3e;
   font-family: "DM Sans";
@@ -398,7 +480,7 @@ PAIN POINTS SECTION-3
   margin-bottom: 12px;
 }
 .clinics-need-text .section-description {
-  max-width: 560px;
+  max-width: 600px;
 }
 
 /* HOW IT WORKS SECTION-6 */
@@ -1163,6 +1245,34 @@ So icon always 20 × 20px rahega.*/
   .clinics-need-image img {
     border-radius: 10px;
   }
+
+  .needs-card {
+    padding: 20px;
+  }
+  .needs-item {
+    gap: 16px;
+  }
+  .needs-number {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .needs-content h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .needs-content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .needs-item + .needs-item {
+    padding-top: 20px;
+    margin-top: 4px;
+  }
+
   /* HOW IT WORKS SECTION-6 */
   .system {
     padding: 60px 0;
